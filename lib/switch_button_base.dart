@@ -1,8 +1,16 @@
+/*
+ * @Author: lipeng 1162423147@qq.com
+ * @Date: 2023-09-22 13:15:38
+ * @LastEditors: lipeng 1162423147@qq.com
+ * @LastEditTime: 2023-09-22 17:38:40
+ * @FilePath: /phoenix_switch/lib/switch_button_base.dart
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 import 'package:flutter/material.dart';
 
 const double _borderWidth = 1.5;
 
-class BrnBaseSwitchButton extends StatelessWidget {
+class BaseSwitchButton extends StatelessWidget {
   final Size size;
 
   /// Whether this switch is on or off.
@@ -25,7 +33,7 @@ class BrnBaseSwitchButton extends StatelessWidget {
   /// The color to use on the thumb.
   final Color thumbColor;
 
-  const BrnBaseSwitchButton({
+  const BaseSwitchButton({
     Key? key,
     required this.value,
     required this.onChanged,
@@ -55,8 +63,7 @@ class BrnBaseSwitchButton extends StatelessWidget {
               border: Border.all(
                   color: value ? Colors.transparent : borderColor,
                   width: _borderWidth),
-              borderRadius:
-                  BorderRadius.all(Radius.circular(size.height / 2)),
+              borderRadius: BorderRadius.all(Radius.circular(size.height / 2)),
             ),
           ),
           _getThumb(value)
@@ -69,7 +76,7 @@ class BrnBaseSwitchButton extends StatelessWidget {
     return (value)
         ? Positioned(
             child: Padding(
-              padding: EdgeInsets.only(right: _borderWidth),
+              padding: const EdgeInsets.only(right: _borderWidth),
               child: Container(
                 height: size.height - 2 * _borderWidth,
                 width: size.height - 2 * _borderWidth,
