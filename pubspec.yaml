@@ -1,6 +1,6 @@
 name: phoenix_switch
 description: phoenix 将做为企业级基础组件:Switch,提供项目支持。
-version: 1.0.1
+version: 1.0.2
 homepage: 'https://github.com/vsguji/phoenix_switch.git'
 
 environment:
@@ -11,6 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   phoenix_base: ^1.0.2
+  phoenix_card: ^1.0.4
 dev_dependencies:
   flutter_test:
     sdk: flutter

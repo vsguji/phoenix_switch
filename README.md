@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# phoenix_switch
-Flutter 企业界组件：Switch
-=======
 <!--
  * @Author: lipeng 1162423147@qq.com
  * @Date: 2023-09-22 13:08:29
@@ -44,4 +40,4 @@ const like = 'sample';
 ## Additional information
 
 phoenix 将做为企业级基础组件:Switch,提供项目支持。
->>>>>>> c58ef8e ([new] 新建)
+
