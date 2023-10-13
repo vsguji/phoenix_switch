@@ -11,7 +11,6 @@ dependencies:
   flutter:
     sdk: flutter
   phoenix_base: ^1.0.2
-  phoenix_card: ^1.0.4
 dev_dependencies:
   flutter_test:
     sdk: flutter
